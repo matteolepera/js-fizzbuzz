@@ -23,10 +23,17 @@
 //3&5:
 // numero % 3 === 0 && numero % 5 === 0; console.log(fizzbuzz);
 
+let result = "";
 
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
-
+    if (i % 3 === 0 && i % 5 === 0) {
+        result += "fizzbuzz\n";
+    } else if (i % 3 === 0) {
+        result += "fizz\n";
+    } else if (i % 5 === 0) {
+        result += "buzz\n";
+    } else {
+        result += i + "\n";
+    }
 }
-
-
+console.log(result);
