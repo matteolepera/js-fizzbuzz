@@ -27,13 +27,14 @@ let result = "";
 
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-        result += "fizzbuzz\n";
+        result = "fizzbuzz";
     } else if (i % 3 === 0) {
-        result += "fizz\n";
+        result = "fizz";
     } else if (i % 5 === 0) {
-        result += "buzz\n";
+        result = "buzz";
     } else {
-        result += i + "\n";
+        result = i;
     }
+    console.log(result);
 }
-console.log(result);
+
